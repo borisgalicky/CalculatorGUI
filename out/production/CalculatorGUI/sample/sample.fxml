@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="one" focusTraversable="false" layoutX="34.0" layoutY="136.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="34.0" text="SOVY Calculator">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="two" focusTraversable="false" layoutX="100.0" layoutY="136.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="three" focusTraversable="false" layoutX="165.0" layoutY="136.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="four" focusTraversable="false" layoutX="34.0" layoutY="197.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="4">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="seven" focusTraversable="false" layoutX="34.0" layoutY="260.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="7">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="nine" focusTraversable="false" layoutX="165.0" layoutY="260.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="9">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="five" focusTraversable="false" layoutX="100.0" layoutY="197.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="5">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="six" focusTraversable="false" layoutX="165.0" layoutY="197.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="6">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="eight" focusTraversable="false" layoutX="100.0" layoutY="260.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="8">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="zero" focusTraversable="false" layoutX="100.0" layoutY="322.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="equal" focusTraversable="false" layoutX="165.0" layoutY="322.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="=">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="plus" focusTraversable="false" layoutX="34.0" layoutY="322.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="+">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="multiply" focusTraversable="false" layoutX="100.0" layoutY="385.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="*">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="minus" focusTraversable="false" layoutX="35.0" layoutY="385.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="–">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="divide" focusTraversable="false" layoutX="166.0" layoutY="385.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="/">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="text" editable="false" focusTraversable="false" layoutX="34.0" layoutY="41.0" prefHeight="41.0" prefWidth="183.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></TextField>
+      <Button fx:id="clear" layoutX="35.0" layoutY="92.0" mnemonicParsing="false" onAction="#process" prefHeight="35.0" prefWidth="183.0" text="CLEAR">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
