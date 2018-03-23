@@ -64,13 +64,15 @@ public class Controller{
 
     public void changeThemeBlue(ActionEvent event){
         menu.setStyle("-fx-background-color: #deeff5");
+        System.out.println("Theme changed to blue!");
         grey.setEnabled(true);
         blue.setEnabled(false);
         white.setEnabled(true);
     }
 
     public void changeThemeWhite(ActionEvent event){
-        menu.setStyle("-fx-background-color: #ffffff");
+        menu.setStyle("-fx-background-color: ##fbfbfb");
+        System.out.println("Theme changed to white!");
         grey.setEnabled(true);
         blue.setEnabled(true);
         white.setEnabled(false);
@@ -78,6 +80,7 @@ public class Controller{
 
     public void changeThemeGrey(ActionEvent event){
         menu.setStyle("-fx-background-color: #e9e9e9");
+        System.out.println("Theme changed to grey!");
         grey.setEnabled(false);
         blue.setEnabled(true);
         white.setEnabled(true);

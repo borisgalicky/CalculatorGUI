@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #fbfbfbf;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Button fx:id="one" focusTraversable="false" layoutX="36.0" layoutY="140.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="1">
          <font>
@@ -144,6 +144,9 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button fx:id="two_exp" focusTraversable="false" layoutX="299.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text=" ²">
          <font>
@@ -173,7 +176,7 @@
         <menus>
             <Menu id="theme" fx:id="theme" mnemonicParsing="false" text="Theme">
                <items>
-                  <MenuItem id="white" mnemonicParsing="false" onAction="#changeThemeWhite" text="White" />
+                  <MenuItem id="default" mnemonicParsing="false" onAction="#changeThemeWhite" text="Default" />
                   <MenuItem id="blue" mnemonicParsing="false" onAction="#changeThemeBlue" text="Blue" />
                   <MenuItem id="grey" mnemonicParsing="false" onAction="#changeThemeGrey" text="Grey" />
                </items></Menu>
