@@ -2,8 +2,12 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
+
+import java.awt.*;
 
 public class Controller{
     Float firstOperand = 0f;
@@ -49,6 +53,43 @@ public class Controller{
     private Button three_exp;
     @FXML
     private Button dot;
+    @FXML
+    private Pane menu;
+    @FXML
+    private MenuItem white;
+    @FXML
+    private MenuItem blue;
+    @FXML
+    private MenuItem grey;
+
+    public void changeThemeBlue(ActionEvent event){
+        menu.setStyle("-fx-background-color: #deeff5");
+        /*grey.setEnabled(true);
+        blue.setEnabled(false);
+        white.setEnabled(true);*/
+    }
+
+    public void changeThemeWhite(ActionEvent event){
+        menu.setStyle("-fx-background-color: #ffffff");
+        /*grey.setEnabled(true);
+        blue.setEnabled(true);
+        white.setEnabled(false);*/
+    }
+
+    public void changeThemeGrey(ActionEvent event){
+        menu.setStyle("-fx-background-color: #e9e9e9");
+        /*grey.setEnabled(false);
+        blue.setEnabled(true);
+        white.setEnabled(true);*/
+    }
+
+    public void showAbout(ActionEvent event){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("About program");
+        alert.setHeaderText(null);
+        alert.setContentText("SOVY Calculator version 1.0.\nCreated by Boris Galický.\nAll rights reserved.");
+        alert.showAndWait();
+    }
 
     public void process(ActionEvent event) {
         if(event.getSource() == dot){
@@ -140,8 +181,8 @@ public class Controller{
             text.setText("");
         } else if (event.getSource() == equal) {
             Float secondOperand = Float.parseFloat(text.getText());
-            System.out.println("Prvy operand: "+firstOperand);
-            System.out.println("Druhy operand: "+secondOperand);
+            //System.out.println("Prvy operand: "+firstOperand);
+            //System.out.println("Druhy operand: "+secondOperand);
             switch(operation){
                 case 1:
                     Float ans = firstOperand + secondOperand;
