@@ -64,23 +64,23 @@ public class Controller{
 
     public void changeThemeBlue(ActionEvent event){
         menu.setStyle("-fx-background-color: #deeff5");
-        /*grey.setEnabled(true);
+        grey.setEnabled(true);
         blue.setEnabled(false);
-        white.setEnabled(true);*/
+        white.setEnabled(true);
     }
 
     public void changeThemeWhite(ActionEvent event){
         menu.setStyle("-fx-background-color: #ffffff");
-        /*grey.setEnabled(true);
+        grey.setEnabled(true);
         blue.setEnabled(true);
-        white.setEnabled(false);*/
+        white.setEnabled(false);
     }
 
     public void changeThemeGrey(ActionEvent event){
         menu.setStyle("-fx-background-color: #e9e9e9");
-        /*grey.setEnabled(false);
+        grey.setEnabled(false);
         blue.setEnabled(true);
-        white.setEnabled(true);*/
+        white.setEnabled(true);
     }
 
     public void showAbout(ActionEvent event){
@@ -128,13 +128,10 @@ public class Controller{
             nine.setDisable(true);zero.setDisable(true);dot.setDisable(true);equal.setDisable(false);
         } else if (event.getSource() == clear) {
             text.clear();
-            divide.setDisable(false);
-            plus.setDisable(false);
-            minus.setDisable(false);
-            multiply.setDisable(false);
-            two_exp.setDisable(false);
-            three_exp.setDisable(false);
-            equal.setDisable(true);
+            divide.setDisable(false);plus.setDisable(false);minus.setDisable(false);multiply.setDisable(false);two_exp.setDisable(false);three_exp.setDisable(false);
+            equal.setDisable(true);one.setDisable(false);
+            two.setDisable(false);three.setDisable(false);four.setDisable(false);five.setDisable(false);six.setDisable(false);seven.setDisable(false);eight.setDisable(false);
+            nine.setDisable(false);zero.setDisable(false);dot.setDisable(false);
         } else if (event.getSource() == divide) {
             firstOperand = Float.parseFloat(text.getText());
             operation = 4;
