@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #fbfbfbf;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #fbfbfb;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Button fx:id="one" focusTraversable="false" layoutX="36.0" layoutY="140.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="1">
          <font>
@@ -176,9 +176,9 @@
         <menus>
             <Menu id="theme" fx:id="theme" mnemonicParsing="false" text="Theme">
                <items>
-                  <MenuItem id="default" mnemonicParsing="false" onAction="#changeThemeWhite" text="Default" />
-                  <MenuItem id="blue" mnemonicParsing="false" onAction="#changeThemeBlue" text="Blue" />
-                  <MenuItem id="grey" mnemonicParsing="false" onAction="#changeThemeGrey" text="Grey" />
+                  <MenuItem id="default_color" mnemonicParsing="false" onAction="#changeThemeWhite" text="Default" />
+                  <MenuItem id="blue_color" mnemonicParsing="false" onAction="#changeThemeBlue" text="Blue" />
+                  <MenuItem id="grey_color" mnemonicParsing="false" onAction="#changeThemeGrey" text="Grey" />
                </items></Menu>
             <Menu id="about" mnemonicParsing="false" text="Info">
                <items>

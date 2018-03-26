@@ -56,34 +56,34 @@ public class Controller{
     @FXML
     private Pane menu;
     @FXML
-    private MenuItem white;
+    private MenuItem default_color;
     @FXML
-    private MenuItem blue;
+    private MenuItem blue_color;
     @FXML
-    private MenuItem grey;
+    private MenuItem grey_color;
 
     public void changeThemeBlue(ActionEvent event){
         menu.setStyle("-fx-background-color: #deeff5");
         System.out.println("Theme changed to blue!");
-        grey.setEnabled(true);
-        blue.setEnabled(false);
-        white.setEnabled(true);
+        grey_color.setEnabled(true);
+        blue_color.setEnabled(false);
+        default_color.setEnabled(true);
     }
 
     public void changeThemeWhite(ActionEvent event){
         menu.setStyle("-fx-background-color: ##fbfbfb");
         System.out.println("Theme changed to white!");
-        grey.setEnabled(true);
-        blue.setEnabled(true);
-        white.setEnabled(false);
+        grey_color.setEnabled(true);
+        blue_color.setEnabled(true);
+        default_color.setEnabled(false);
     }
 
     public void changeThemeGrey(ActionEvent event){
         menu.setStyle("-fx-background-color: #e9e9e9");
         System.out.println("Theme changed to grey!");
-        grey.setEnabled(false);
-        blue.setEnabled(true);
-        white.setEnabled(true);
+        grey_color.setEnabled(false);
+        blue_color.setEnabled(true);
+        default_color.setEnabled(true);
     }
 
     public void showAbout(ActionEvent event){
@@ -97,6 +97,7 @@ public class Controller{
     public void process(ActionEvent event) {
         if(event.getSource() == dot){
             text.setText(text.getText() + ".");
+            dot.setDisable(true);
         } else if (event.getSource() == one) {
             text.setText(text.getText() + "1");
         } else if (event.getSource() == two) {
@@ -145,6 +146,7 @@ public class Controller{
             two_exp.setDisable(true);
             three_exp.setDisable(true);
             equal.setDisable(false);
+            dot.setDisable(false);
             text.setText("");
         } else if (event.getSource() == multiply) {
             firstOperand = Float.parseFloat(text.getText());
@@ -156,6 +158,7 @@ public class Controller{
             two_exp.setDisable(true);
             three_exp.setDisable(true);
             equal.setDisable(false);
+            dot.setDisable(false);
             text.setText("");
         } else if (event.getSource() == minus) {
             firstOperand = Float.parseFloat(text.getText());
@@ -167,6 +170,7 @@ public class Controller{
             two_exp.setDisable(true);
             three_exp.setDisable(true);
             equal.setDisable(false);
+            dot.setDisable(false);
             text.setText("");
         } else if (event.getSource() == plus) {
             firstOperand = Float.parseFloat(text.getText());
@@ -178,6 +182,7 @@ public class Controller{
             two_exp.setDisable(true);
             three_exp.setDisable(true);
             equal.setDisable(false);
+            dot.setDisable(false);
             text.setText("");
         } else if (event.getSource() == equal) {
             Float secondOperand = Float.parseFloat(text.getText());
