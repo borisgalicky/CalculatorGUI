@@ -320,7 +320,7 @@ public class Controller{
             operation = 4;
             divide.setDisable(true);
             plus.setDisable(true);
-            minus.setDisable(true);
+            minus.setDisable(false);
             multiply.setDisable(true);
             two_exp.setDisable(true);
             three_exp.setDisable(true);
@@ -333,7 +333,7 @@ public class Controller{
             operation = 3;
             divide.setDisable(true);
             plus.setDisable(true);
-            minus.setDisable(true);
+            minus.setDisable(false);
             multiply.setDisable(true);
             two_exp.setDisable(true);
             three_exp.setDisable(true);
