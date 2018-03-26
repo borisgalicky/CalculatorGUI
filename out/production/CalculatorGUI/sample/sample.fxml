@@ -104,7 +104,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="plus" focusTraversable="false" layoutX="36.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="+">
+      <Button fx:id="plus" disable="true" focusTraversable="false" layoutX="101.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="+">
          <font>
             <Font size="24.0" />
          </font>
@@ -112,7 +112,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="multiply" focusTraversable="false" layoutX="167.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="*">
+      <Button fx:id="multiply" disable="true" focusTraversable="false" layoutX="167.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="*">
          <font>
             <Font size="24.0" />
          </font>
@@ -120,7 +120,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="minus" focusTraversable="false" layoutX="101.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="–">
+      <Button fx:id="minus" focusTraversable="false" layoutX="36.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="–">
          <font>
             <Font size="24.0" />
          </font>
@@ -128,7 +128,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="divide" focusTraversable="false" layoutX="233.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="/">
+      <Button fx:id="divide" disable="true" focusTraversable="false" layoutX="233.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text="/">
          <font>
             <Font size="24.0" />
          </font>
@@ -148,7 +148,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="two_exp" focusTraversable="false" layoutX="299.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text=" ²">
+      <Button fx:id="two_exp" disable="true" focusTraversable="false" layoutX="299.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text=" ²">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -156,7 +156,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="three_exp" focusTraversable="false" layoutX="364.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text=" ³">
+      <Button fx:id="three_exp" disable="true" focusTraversable="false" layoutX="364.0" layoutY="264.0" mnemonicParsing="false" onAction="#process" prefHeight="51.0" prefWidth="51.0" text=" ³">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -176,7 +176,7 @@
         <menus>
             <Menu id="theme" fx:id="theme" mnemonicParsing="false" text="Theme">
                <items>
-                  <MenuItem id="default_color" mnemonicParsing="false" onAction="#changeThemeWhite" text="Default" />
+                  <MenuItem id="default_color" mnemonicParsing="false" onAction="#changeThemeDefault" text="Default" />
                   <MenuItem id="blue_color" mnemonicParsing="false" onAction="#changeThemeBlue" text="Blue" />
                   <MenuItem id="grey_color" mnemonicParsing="false" onAction="#changeThemeGrey" text="Grey" />
                </items></Menu>
