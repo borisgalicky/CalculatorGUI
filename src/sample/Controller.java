@@ -66,7 +66,6 @@ public class Controller{
 
     public void changeThemeBlue(ActionEvent event){
         menu.setStyle("-fx-background-color: #deeff5");
-        //System.out.println("Theme changed to blue!");
         grey_color_item.setEnabled(true);
         blue_color_item.setEnabled(false);
         default_color_item.setEnabled(true);
@@ -74,7 +73,6 @@ public class Controller{
 
     public void changeThemeDefault(ActionEvent event){
         menu.setStyle("-fx-background-color: ##fbfbfb");
-        //System.out.println("Theme changed to default!");
         grey_color_item.setEnabled(true);
         blue_color_item.setEnabled(true);
         default_color_item.setEnabled(false);
@@ -82,7 +80,6 @@ public class Controller{
 
     public void changeThemeGrey(ActionEvent event){
         menu.setStyle("-fx-background-color: #e9e9e9");
-        //System.out.println("Theme changed to grey!");
         grey_color_item.setEnabled(false);
         blue_color_item.setEnabled(true);
         default_color_item.setEnabled(true);
