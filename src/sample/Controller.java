@@ -62,10 +62,11 @@ public class Controller{
     @FXML
     private MenuItem grey_color_item;
     private boolean inProgress=false;
+    private boolean dotPressed=false;
 
     public void changeThemeBlue(ActionEvent event){
         menu.setStyle("-fx-background-color: #deeff5");
-        System.out.println("Theme changed to blue!");
+        //System.out.println("Theme changed to blue!");
         grey_color_item.setEnabled(true);
         blue_color_item.setEnabled(false);
         default_color_item.setEnabled(true);
@@ -73,7 +74,7 @@ public class Controller{
 
     public void changeThemeDefault(ActionEvent event){
         menu.setStyle("-fx-background-color: ##fbfbfb");
-        System.out.println("Theme changed to white!");
+        //System.out.println("Theme changed to default!");
         grey_color_item.setEnabled(true);
         blue_color_item.setEnabled(true);
         default_color_item.setEnabled(false);
@@ -81,7 +82,7 @@ public class Controller{
 
     public void changeThemeGrey(ActionEvent event){
         menu.setStyle("-fx-background-color: #e9e9e9");
-        System.out.println("Theme changed to grey!");
+        //System.out.println("Theme changed to grey!");
         grey_color_item.setEnabled(false);
         blue_color_item.setEnabled(true);
         default_color_item.setEnabled(true);
@@ -91,12 +92,13 @@ public class Controller{
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About program");
         alert.setHeaderText(null);
-        alert.setContentText("SOVY Calculator version 1.1.\nCreated by Boris Galický.\nAll rights reserved.");
+        alert.setContentText("SOVY Calculator version 1.1\nCreated by Boris Galický.\nAll rights reserved.");
         alert.showAndWait();
     }
 
     public void process(ActionEvent event){
         if(event.getSource() == dot) {
+            dotPressed=true;
             if(inProgress==false){
                 divide.setDisable(false);
                 plus.setDisable(false);
@@ -126,6 +128,13 @@ public class Controller{
             two_exp.setDisable(false);
             three_exp.setDisable(false);
             clear.setDisable(false);
+            dot.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
             text.setText(text.getText() + "1");
             }
             else{
@@ -135,6 +144,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "1");
             }
         }
@@ -146,6 +161,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "2");
             }
             else{
@@ -155,6 +176,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "2");
             }
         }
@@ -166,6 +193,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "3");
             }
             else{
@@ -175,6 +208,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "3");
             }
         }
@@ -186,6 +225,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "4");
             }
             else{
@@ -195,6 +240,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "4");
             }
         }
@@ -206,6 +257,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "5");
             }
             else{
@@ -215,6 +272,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "5");
             }
         }
@@ -226,6 +289,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "6");
             }
             else{
@@ -235,6 +304,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "6");
             }
         }
@@ -246,6 +321,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "7");
             }
             else{
@@ -255,6 +336,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "7");
             }
         }
@@ -266,6 +353,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "8");
             }
             else{
@@ -275,6 +368,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "8");
             }
         }
@@ -286,6 +385,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "9");
             }
             else{
@@ -295,6 +400,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "9");
             }
         }
@@ -306,6 +417,12 @@ public class Controller{
                 two_exp.setDisable(false);
                 three_exp.setDisable(false);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "0");
             }
             else{
@@ -315,6 +432,12 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 clear.setDisable(false);
+                if(dotPressed==false){
+                    dot.setDisable(false);
+                }
+                else if(dotPressed==true){
+                    dot.setDisable(true);
+                }
                 text.setText(text.getText() + "0");
             }
         }
@@ -335,8 +458,9 @@ public class Controller{
             divide.setDisable(true);plus.setDisable(true);minus.setDisable(false);multiply.setDisable(true);two_exp.setDisable(true);three_exp.setDisable(true);
             equal.setDisable(true);one.setDisable(false);
             two.setDisable(false);three.setDisable(false);four.setDisable(false);five.setDisable(false);six.setDisable(false);seven.setDisable(false);eight.setDisable(false);
-            nine.setDisable(false);zero.setDisable(false);dot.setDisable(false);clear.setDisable(true);inProgress=false;
+            nine.setDisable(false);zero.setDisable(false);dot.setDisable(true);clear.setDisable(true);inProgress=false;dotPressed=false;
         } else if (event.getSource() == divide) {
+            dotPressed=false;
             inProgress=true;
             firstOperand = Float.parseFloat(text.getText());
             operation = 4;
@@ -347,9 +471,10 @@ public class Controller{
             two_exp.setDisable(true);
             three_exp.setDisable(true);
             equal.setDisable(false);
-            dot.setDisable(false);
+            dot.setDisable(true);
             text.setText("");
         } else if (event.getSource() == multiply) {
+            dotPressed=false;
             inProgress=true;
             firstOperand = Float.parseFloat(text.getText());
             operation = 3;
@@ -360,13 +485,17 @@ public class Controller{
             two_exp.setDisable(true);
             three_exp.setDisable(true);
             equal.setDisable(false);
-            dot.setDisable(false);
+            dot.setDisable(true);
             text.setText("");
         } else if (event.getSource() == minus){
             if(text.getText().trim().isEmpty()){
                 text.setText(text.getText() + "-");
+                if(inProgress==true){
+                    minus.setDisable(true);
+                }
             }
             else{
+                dotPressed=false;
                 inProgress=true;
                 firstOperand = Float.parseFloat(text.getText());
                 operation = 2;
@@ -377,13 +506,14 @@ public class Controller{
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
                 equal.setDisable(false);
-                dot.setDisable(false);
+                dot.setDisable(true);
                 text.setText("");
                     if(text.getText().matches("^[\\-]{1}$")){
                         minus.setDisable(true);
                     }
             }
         } else if (event.getSource() == plus) {
+            dotPressed=false;
             inProgress=true;
             firstOperand = Float.parseFloat(text.getText());
             operation = 1;
@@ -393,7 +523,7 @@ public class Controller{
             multiply.setDisable(true);
             two_exp.setDisable(true);
             three_exp.setDisable(true);
-            dot.setDisable(false);
+            dot.setDisable(true);
             text.setText("");
             equal.setDisable(false);
 
@@ -437,7 +567,7 @@ public class Controller{
             }
             divide.setDisable(true);plus.setDisable(true);minus.setDisable(true);multiply.setDisable(true);two_exp.setDisable(true);three_exp.setDisable(true);one.setDisable(true);
             two.setDisable(true);three.setDisable(true);four.setDisable(true);five.setDisable(true);six.setDisable(true);seven.setDisable(true);eight.setDisable(true);
-            nine.setDisable(true);zero.setDisable(true);dot.setDisable(true);equal.setDisable(true);inProgress=false;
+            nine.setDisable(true);zero.setDisable(true);dot.setDisable(true);equal.setDisable(true);inProgress=false;dotPressed=false;
         }
     }
 }
