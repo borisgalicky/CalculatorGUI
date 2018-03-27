@@ -92,7 +92,7 @@ public class Controller{
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About program");
         alert.setHeaderText(null);
-        alert.setContentText("SOVY Calculator version 1.1\nCreated by Boris Galický.\nAll rights reserved.");
+        alert.setContentText("SOVY Calculator version 1.2\nCreated by Boris Galický.\nAll rights reserved.");
         alert.showAndWait();
     }
 
@@ -122,6 +122,7 @@ public class Controller{
         }
         else if (event.getSource() == one) {
             if(inProgress==false){
+            minus.setDisable(false);
             divide.setDisable(false);
             plus.setDisable(false);
             multiply.setDisable(false);
@@ -136,8 +137,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
             text.setText(text.getText() + "1");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "1");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -151,10 +165,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "1");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == two) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -168,8 +186,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "2");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "2");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -183,10 +214,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "2");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == three) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -200,8 +235,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "3");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "3");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -215,10 +263,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "3");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == four) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -232,8 +284,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "4");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "4");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -247,10 +312,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "4");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == five) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -264,8 +333,22 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "5");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                    minus.setDisable(true);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "5");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -279,10 +362,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "5");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == six) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -296,8 +383,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "6");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "6");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -311,10 +411,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "6");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == seven) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -328,8 +432,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "7");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "7");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -343,10 +460,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "7");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == eight) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -360,8 +481,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "8");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "8");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -375,10 +509,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "8");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == nine) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -392,8 +530,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "9");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "9");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -407,10 +558,14 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "9");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == zero) {
             if(inProgress==false){
+                minus.setDisable(false);
                 divide.setDisable(false);
                 plus.setDisable(false);
                 multiply.setDisable(false);
@@ -424,8 +579,21 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "0");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
+            }
+            else if(inProgress==true){
+                minus.setDisable(true);
+                text.setText(text.getText() + "0");
+                dot.setDisable(false);
+                equal.setDisable(false);
+                if(text.getText().matches("^.?\\d{1,}[\\.]\\d{1,}$")){
+                    dot.setDisable(true);
+                }
             }
             else{
+                minus.setDisable(false);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
@@ -439,6 +607,9 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "0");
+                if(inProgress==true){
+                    equal.setDisable(false);
+                }
             }
         }
         else if (event.getSource() == three_exp) {
@@ -462,6 +633,9 @@ public class Controller{
         } else if (event.getSource() == divide) {
             dotPressed=false;
             inProgress=true;
+            if(inProgress==true){
+                equal.setDisable(true);
+            }
             firstOperand = Float.parseFloat(text.getText());
             operation = 4;
             divide.setDisable(true);
@@ -470,12 +644,14 @@ public class Controller{
             multiply.setDisable(true);
             two_exp.setDisable(true);
             three_exp.setDisable(true);
-            equal.setDisable(false);
             dot.setDisable(true);
             text.setText("");
         } else if (event.getSource() == multiply) {
             dotPressed=false;
             inProgress=true;
+            if(inProgress==true){
+                equal.setDisable(true);
+            }
             firstOperand = Float.parseFloat(text.getText());
             operation = 3;
             divide.setDisable(true);
@@ -484,12 +660,13 @@ public class Controller{
             multiply.setDisable(true);
             two_exp.setDisable(true);
             three_exp.setDisable(true);
-            equal.setDisable(false);
             dot.setDisable(true);
             text.setText("");
         } else if (event.getSource() == minus){
             if(text.getText().trim().isEmpty()){
                 text.setText(text.getText() + "-");
+                clear.setDisable(false);
+                minus.setDisable(true);
                 if(inProgress==true){
                     minus.setDisable(true);
                 }
@@ -497,6 +674,9 @@ public class Controller{
             else{
                 dotPressed=false;
                 inProgress=true;
+                if(inProgress==true){
+                    equal.setDisable(true);
+                }
                 firstOperand = Float.parseFloat(text.getText());
                 operation = 2;
                 divide.setDisable(true);
@@ -505,16 +685,18 @@ public class Controller{
                 multiply.setDisable(true);
                 two_exp.setDisable(true);
                 three_exp.setDisable(true);
-                equal.setDisable(false);
                 dot.setDisable(true);
                 text.setText("");
                     if(text.getText().matches("^[\\-]{1}$")){
                         minus.setDisable(true);
                     }
             }
-        } else if (event.getSource() == plus) {
+        } else if (event.getSource() == plus){
             dotPressed=false;
             inProgress=true;
+                if(inProgress==true){
+                    equal.setDisable(true);
+                }
             firstOperand = Float.parseFloat(text.getText());
             operation = 1;
             divide.setDisable(true);
@@ -525,7 +707,6 @@ public class Controller{
             three_exp.setDisable(true);
             dot.setDisable(true);
             text.setText("");
-            equal.setDisable(false);
 
         } else if (event.getSource() == equal) {
             Float secondOperand = Float.parseFloat(text.getText());
@@ -565,9 +746,9 @@ public class Controller{
                     text.setText(String.valueOf(ans));
                     break;
             }
-            divide.setDisable(true);plus.setDisable(true);minus.setDisable(true);multiply.setDisable(true);two_exp.setDisable(true);three_exp.setDisable(true);one.setDisable(true);
-            two.setDisable(true);three.setDisable(true);four.setDisable(true);five.setDisable(true);six.setDisable(true);seven.setDisable(true);eight.setDisable(true);
-            nine.setDisable(true);zero.setDisable(true);dot.setDisable(true);equal.setDisable(true);inProgress=false;dotPressed=false;
+            divide.setDisable(false);plus.setDisable(false);minus.setDisable(false);multiply.setDisable(false);two_exp.setDisable(false);three_exp.setDisable(false);one.setDisable(false);
+            two.setDisable(false);three.setDisable(false);four.setDisable(false);five.setDisable(false);six.setDisable(false);seven.setDisable(false);eight.setDisable(false);
+            nine.setDisable(false);zero.setDisable(false);dot.setDisable(true);equal.setDisable(true);inProgress=false;dotPressed=false;
         }
     }
 }
