@@ -12,7 +12,6 @@ import java.awt.*;
 public class Controller{
     Float firstOperand = 0f;
     int operation = 0;
-
     @FXML
     public Button clear;
     @FXML
@@ -134,9 +133,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             text.setText(text.getText() + "1");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -147,25 +144,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "1");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == two) {
             if(inProgress==false){
@@ -183,9 +162,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "2");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -196,25 +173,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "2");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == three) {
             if(inProgress==false){
@@ -232,9 +191,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "3");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -245,25 +202,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "3");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == four) {
             if(inProgress==false){
@@ -281,9 +220,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "4");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -294,25 +231,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "4");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == five) {
             if(inProgress==false){
@@ -344,25 +263,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "5");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == six) {
             if(inProgress==false){
@@ -380,9 +281,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "6");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -393,25 +292,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "6");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == seven) {
             if(inProgress==false){
@@ -429,9 +310,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "7");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -442,25 +321,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "7");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == eight) {
             if(inProgress==false){
@@ -478,9 +339,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "8");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -491,25 +350,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "8");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == nine) {
             if(inProgress==false){
@@ -527,9 +368,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "9");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -540,25 +379,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "9");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
         else if (event.getSource() == zero) {
             if(inProgress==false){
@@ -576,9 +397,7 @@ public class Controller{
                     dot.setDisable(true);
                 }
                 text.setText(text.getText() + "0");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
+
             }
             else if(inProgress==true){
                 minus.setDisable(true);
@@ -589,27 +408,15 @@ public class Controller{
                     dot.setDisable(true);
                 }
             }
-            else{
-                minus.setDisable(false);
-                divide.setDisable(true);
-                plus.setDisable(true);
-                multiply.setDisable(true);
-                two_exp.setDisable(true);
-                three_exp.setDisable(true);
-                clear.setDisable(false);
-                if(dotPressed==false){
-                    dot.setDisable(false);
-                }
-                else if(dotPressed==true){
-                    dot.setDisable(true);
-                }
-                text.setText(text.getText() + "0");
-                if(inProgress==true){
-                    equal.setDisable(false);
-                }
-            }
+
         }
-        else if (event.getSource() == three_exp) {
+        else if (event.getSource() == clear) {
+            text.clear();
+            divide.setDisable(true);plus.setDisable(true);minus.setDisable(false);multiply.setDisable(true);two_exp.setDisable(true);three_exp.setDisable(true);
+            equal.setDisable(true);one.setDisable(false);
+            two.setDisable(false);three.setDisable(false);four.setDisable(false);five.setDisable(false);six.setDisable(false);seven.setDisable(false);eight.setDisable(false);
+            nine.setDisable(false);zero.setDisable(false);dot.setDisable(true);clear.setDisable(true);inProgress=false;dotPressed=false;
+        } else if (event.getSource() == three_exp) {
             firstOperand = Float.parseFloat(text.getText());
             operation = 6;
             divide.setDisable(true);plus.setDisable(true);minus.setDisable(true);multiply.setDisable(true);two_exp.setDisable(true);three_exp.setDisable(true);one.setDisable(true);
@@ -621,13 +428,8 @@ public class Controller{
             divide.setDisable(true);plus.setDisable(true);minus.setDisable(true);multiply.setDisable(true);two_exp.setDisable(true);three_exp.setDisable(true);one.setDisable(true);
             two.setDisable(true);three.setDisable(true);four.setDisable(true);five.setDisable(true);six.setDisable(true);seven.setDisable(true);eight.setDisable(true);
             nine.setDisable(true);zero.setDisable(true);dot.setDisable(true);equal.setDisable(false);
-        } else if (event.getSource() == clear) {
-            text.clear();
-            divide.setDisable(true);plus.setDisable(true);minus.setDisable(false);multiply.setDisable(true);two_exp.setDisable(true);three_exp.setDisable(true);
-            equal.setDisable(true);one.setDisable(false);
-            two.setDisable(false);three.setDisable(false);four.setDisable(false);five.setDisable(false);six.setDisable(false);seven.setDisable(false);eight.setDisable(false);
-            nine.setDisable(false);zero.setDisable(false);dot.setDisable(true);clear.setDisable(true);inProgress=false;dotPressed=false;
-        } else if (event.getSource() == divide) {
+        }
+        else if (event.getSource() == divide) {
             dotPressed=false;
             inProgress=true;
             if(inProgress==true){
@@ -711,16 +513,31 @@ public class Controller{
                 case 1:
                     Float ans = firstOperand + secondOperand;
                     text.setText(String.valueOf(ans));
+                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                        int ans2=(int)Math.round(ans);
+                        text.setText(String.valueOf(ans2));
+
+                    }
                     break;
 
                 case 2:
                     ans = firstOperand - secondOperand;
                     text.setText(String.valueOf(ans));
+                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                        int ans2=(int)Math.round(ans);
+                        text.setText(String.valueOf(ans2));
+
+                    }
                     break;
 
                 case 3:
                     ans = firstOperand * secondOperand;
                     text.setText(String.valueOf(ans));
+                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                        int ans2=(int)Math.round(ans);
+                        text.setText(String.valueOf(ans2));
+
+                    }
                     break;
 
                 case 4:
@@ -731,16 +548,31 @@ public class Controller{
                         text.setText("Error!");
                     }
                     text.setText(String.valueOf(ans));
+                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                        int ans2=(int)Math.round(ans);
+                        text.setText(String.valueOf(ans2));
+
+                    }
                     break;
 
                 case 5:
                     ans = firstOperand * firstOperand;
                     text.setText(String.valueOf(ans));
+                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                        int ans2=(int)Math.round(ans);
+                        text.setText(String.valueOf(ans2));
+
+                    }
                     break;
 
                 case 6:
                     ans = firstOperand * firstOperand * firstOperand;
                     text.setText(String.valueOf(ans));
+                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                        int ans2=(int)Math.round(ans);
+                        text.setText(String.valueOf(ans2));
+
+                    }
                     break;
             }
             divide.setDisable(false);plus.setDisable(false);minus.setDisable(false);multiply.setDisable(false);two_exp.setDisable(false);three_exp.setDisable(false);one.setDisable(false);
