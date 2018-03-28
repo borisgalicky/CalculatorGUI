@@ -140,7 +140,10 @@
       <TextField fx:id="text" editable="false" focusTraversable="false" layoutX="35.0" layoutY="85.0" prefHeight="35.0" prefWidth="183.0">
          <cursor>
             <Cursor fx:constant="DEFAULT" />
-         </cursor></TextField>
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
       <Button fx:id="clear" disable="true" focusTraversable="false" layoutX="232.0" layoutY="85.0" mnemonicParsing="false" onAction="#process" prefHeight="35.0" prefWidth="183.0" text="CLEAR">
          <font>
             <Font name="System Bold" size="15.0" />
