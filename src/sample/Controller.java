@@ -507,7 +507,7 @@ public class Controller{
                 case 1:
                     Float ans = firstOperand + secondOperand;
                     text.setText(String.valueOf(ans));
-                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                    if(text.getText().matches("^[\\-]?\\d{1,}[\\.][0]{1,}$")){
                         int ans2=(int)Math.round(ans);
                         text.setText(String.valueOf(ans2));
 
@@ -517,7 +517,7 @@ public class Controller{
                 case 2:
                     ans = firstOperand - secondOperand;
                     text.setText(String.valueOf(ans));
-                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                    if(text.getText().matches("^[\\-]?\\d{1,}[\\.][0]{1,}$")){
                         int ans2=(int)Math.round(ans);
                         text.setText(String.valueOf(ans2));
 
@@ -527,7 +527,7 @@ public class Controller{
                 case 3:
                     ans = firstOperand * secondOperand;
                     text.setText(String.valueOf(ans));
-                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                    if(text.getText().matches("^[\\-]?\\d{1,}[\\.][0]{1,}$")){
                         int ans2=(int)Math.round(ans);
                         text.setText(String.valueOf(ans2));
 
@@ -542,7 +542,7 @@ public class Controller{
                         text.setText("Error!");
                     }
                     text.setText(String.valueOf(ans));
-                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                    if(text.getText().matches("^[\\-]?\\d{1,}[\\.][0]{1,}$")){
                         int ans2=(int)Math.round(ans);
                         text.setText(String.valueOf(ans2));
 
@@ -552,7 +552,7 @@ public class Controller{
                 case 5:
                     ans = firstOperand * firstOperand;
                     text.setText(String.valueOf(ans));
-                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                    if(text.getText().matches("^[\\-]?\\d{1,}[\\.][0]{1,}$")){
                         int ans2=(int)Math.round(ans);
                         text.setText(String.valueOf(ans2));
 
@@ -562,7 +562,7 @@ public class Controller{
                 case 6:
                     ans = firstOperand * firstOperand * firstOperand;
                     text.setText(String.valueOf(ans));
-                    if(text.getText().matches("^\\d{1,}[\\.][0]{1,}$")){
+                    if(text.getText().matches("^[\\-]?\\d{1,}[\\.][0]{1,}$")){
                         int ans2=(int)Math.round(ans);
                         text.setText(String.valueOf(ans2));
 
