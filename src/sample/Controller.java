@@ -65,23 +65,30 @@ public class Controller{
 
     public void changeThemeBlue(ActionEvent event){
         menu.setStyle("-fx-background-color: #deeff5");
-        grey_color_item.setEnabled(true);
+        /*grey_color_item.setEnabled(true);
         blue_color_item.setEnabled(false);
-        default_color_item.setEnabled(true);
+        default_color_item.setEnabled(true);*/
     }
 
     public void changeThemeDefault(ActionEvent event){
-        menu.setStyle("-fx-background-color: ##fbfbfb");
-        grey_color_item.setEnabled(true);
+        menu.setStyle("-fx-background-color: #fbfbfb");
+        /*grey_color_item.setEnabled(true);
         blue_color_item.setEnabled(true);
-        default_color_item.setEnabled(false);
+        default_color_item.setEnabled(false);*/
     }
 
     public void changeThemeGrey(ActionEvent event){
         menu.setStyle("-fx-background-color: #e9e9e9");
-        grey_color_item.setEnabled(false);
+        /*grey_color_item.setEnabled(false);
         blue_color_item.setEnabled(true);
-        default_color_item.setEnabled(true);
+        default_color_item.setEnabled(true);*/
+    }
+
+    public void changeThemePink(ActionEvent event){
+        menu.setStyle("-fx-background-color: #ffdbdb");
+        /*grey_color_item.setEnabled(true);
+        blue_color_item.setEnabled(false);
+        default_color_item.setEnabled(true);*/
     }
 
     public void showAbout(ActionEvent event){
@@ -92,19 +99,20 @@ public class Controller{
         alert.showAndWait();
     }
 
-    public void trigger(){
+    /*public void trigger(){
         System.out.println("Function has been run!");
-    }
+    }*/
 
     public void process(ActionEvent event){
         if(event.getSource() == dot) {
             dotPressed=true;
             if(inProgress==false){
-                divide.setDisable(false);
-                plus.setDisable(false);
-                multiply.setDisable(false);
-                two_exp.setDisable(false);
-                three_exp.setDisable(false);
+                minus.setDisable(true);
+                divide.setDisable(true);
+                plus.setDisable(true);
+                multiply.setDisable(true);
+                two_exp.setDisable(true);
+                three_exp.setDisable(true);
                 dot.setDisable(true);
                 clear.setDisable(false);
                 text.setText(text.getText() + ".");
@@ -500,7 +508,6 @@ public class Controller{
             three_exp.setDisable(true);
             dot.setDisable(true);
             text.setText("");
-
         } else if (event.getSource() == equal) {
             Float secondOperand = Float.parseFloat(text.getText());
             switch(operation){
@@ -510,7 +517,6 @@ public class Controller{
                     if(text.getText().matches("^[\\-]?\\d{1,}[\\.][0]{1,}$")){
                         int ans2=(int)Math.round(ans);
                         text.setText(String.valueOf(ans2));
-
                     }
                     break;
 

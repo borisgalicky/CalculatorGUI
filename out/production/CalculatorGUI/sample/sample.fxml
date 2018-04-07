@@ -183,6 +183,7 @@
                   <MenuItem id="default_color" mnemonicParsing="false" onAction="#changeThemeDefault" text="Default" />
                   <MenuItem id="blue_color" mnemonicParsing="false" onAction="#changeThemeBlue" text="Blue" />
                   <MenuItem id="grey_color" mnemonicParsing="false" onAction="#changeThemeGrey" text="Grey" />
+                  <MenuItem id="pink_color" mnemonicParsing="false" onAction="#changeThemePink" text="Pink" />
                </items></Menu>
             <Menu id="about" mnemonicParsing="false" text="Info">
                <items>
