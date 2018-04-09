@@ -118,6 +118,7 @@ public class Controller{
                 text.setText(text.getText() + ".");
             }
             else{
+                equal.setDisable(true);
                 divide.setDisable(true);
                 plus.setDisable(true);
                 multiply.setDisable(true);
